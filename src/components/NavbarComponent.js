@@ -30,7 +30,7 @@ const NavbarComponent = (props) => {
               <NavLink href="/jadwalkegiatan/">Jadwal Kegiatan</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Renungan</NavLink>
+              <NavLink href="/renungan/">Renungan</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/components/">Berita</NavLink>

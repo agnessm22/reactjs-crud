@@ -9,6 +9,7 @@ import EditContainerJadwalKegiatan from "./containers/EditContainerJadwalKegiata
 import DetailContainerJadwalKegiatan from "./containers/DetailContainerJadwalKegiatan";
 import Galeri from './components/Fungsional/Galeri';
 import { CartContext } from './CartContext';
+import Renungan from './components/Fungsional/Renungan';
 
 function App() {
   const [value, setValue] = useState(0)
@@ -28,6 +29,8 @@ function App() {
         <Route path="/detail/:id" exact component={DetailContainerJadwalKegiatan} />
 
         <Route path="/galeri"  exact component={Galeri} />
+
+        <Route path="/renungan" exact component={Renungan} />
 
       </CartContext.Provider>
         </BrowserRouter>

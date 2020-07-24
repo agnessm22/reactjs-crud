@@ -7,7 +7,7 @@ function Galeri() {
         <div>
             <Container>
                 <hr/>
-                <Card body inverse color="warning">
+                <Card body inverse color="danger">
                     <h1>Galeri OMK Santo Lukas Pemalang</h1> 
                 </Card>
                 <Row>
