@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container , Row, Card } from 'reactstrap'
 import RowGaleri from './RowGaleri'
+import './CSS/galeri.css';
 
 function Galeri() {
     return(

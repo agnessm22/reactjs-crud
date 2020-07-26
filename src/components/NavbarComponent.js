@@ -26,7 +26,10 @@ const NavbarComponent = (props) => {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-            <NavItem>
+          <NavItem>
+              <NavLink href="/home/">Beranda</NavLink>
+            </NavItem>
+             <NavItem>
               <NavLink href="/jadwalkegiatan/">Jadwal Kegiatan</NavLink>
             </NavItem>
             <NavItem>
@@ -38,13 +41,16 @@ const NavbarComponent = (props) => {
             <NavItem>
               <NavLink href="/galeri/">Galeri</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="/tampiladmin/">Data Admin</NavLink>
+            </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Anggota OMK
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  Lingkungan Markus
+                 <NavLink href="/jadwalkegiatan/">Lingkungan Maria</NavLink>
                 </DropdownItem>
                 <DropdownItem>
                   Lingkungan Ignasius
@@ -56,7 +62,7 @@ const NavbarComponent = (props) => {
                   Lingkungan Emanuel
                 </DropdownItem>
                 <DropdownItem>
-                  Lingkungan Maria
+                  Lingkungan Markus
                 </DropdownItem>
                 <DropdownItem>
                   Lingkungan Yohanes
@@ -95,13 +101,12 @@ const NavbarComponent = (props) => {
                   Stasi Bantarbolang
                 </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          <NavItem>
+              <NavLink href="/logout/">Logout</NavLink>
+            </NavItem>
         </Collapse>
       </Navbar>
     </div>

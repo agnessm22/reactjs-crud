@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import swal from "sweetalert";
 import { deleteJadwal } from "../actions/jadwalkegiatanAction"; 
+import './Fungsional/CSS/desain.css';
 
 const { SearchBar } = Search;
 
@@ -91,6 +92,7 @@ const TableComponent = (props) => {
   ];
     return (
     <Container>
+       <h2 className="header"> JADWAL KEGIATAN </h2>
       { props.getJadwalKegiatanList ? 
         <ToolkitProvider
   bootstrap4 keyField='id' data={ props.getJadwalKegiatanList } columns={ columns } defaultSorted={ defaultSorted }
